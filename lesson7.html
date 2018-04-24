@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake</title>
+    <link rel="stylesheet" href="lesson7.css">
+    <script src="lesson7.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="changeLevel">
+      <span> Выберите сложность игры: </span>
+      <select onchange = "level(this.value)">
+        <option value="one">Легко</option>
+        <option selected value="twoo">Средняя</option>
+        <option value="three">Тяжело</option>
+      </select>
+    </div>
+    <div class="result">Ваш результат: 0 очков</div>
+    <div id="snake-field"></div>
+    <div class="buttons">
+        <div id="snake-start">Старт</div>
+        <div id="snake-renew">Новая игра</div>
+    </div>
+</div>
+</body>
+</html>
